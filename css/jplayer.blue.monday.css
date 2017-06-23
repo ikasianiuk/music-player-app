@@ -225,11 +225,13 @@
 .jp-state-no-volume .jp-volume-controls {
   display: none; }
 
+/*
 .jp-volume-controls {
   position: absolute;
   top: 32px;
   left: 308px;
   width: 200px; }
+*/
 
 .jp-audio-stream .jp-volume-controls {
   left: 70px; }
@@ -309,16 +311,14 @@
   font-size: .64em;
   font-style: oblique; }
 
-.jp-current-time {
+.jp-current-time, 
+.jp-duration,
+.jp-volume-controls,
+.jp-volume{
   float: left;
   display: inline;
-  cursor: default; }
-
-.jp-duration {
-  float: right;
-  display: inline;
-  text-align: right;
-  cursor: pointer; }
+  cursor: default; 
+}
 
 .jp-video .jp-current-time {
   margin-left: 20px; }

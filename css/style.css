@@ -176,7 +176,9 @@ a:focus{
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
+.jp-interface{
+	text-align: center;
+}
 .player__controls--bg{
 	background-color: #5a6a7a;
 	position: fixed;
@@ -190,21 +192,6 @@ a:focus{
 .player__controls{
 	height: 100%;
 }
-/*
-.player__controls{
-	  padding: 0 15px;
-		margin-left: 70px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 90px;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.9));
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.9));
-    background-repeat: no-repeat;
-	  background: #008fd5;
-}
-*/
 .jp-controls{
 	height: 70px;
 	text-align: center;
@@ -214,8 +201,9 @@ a:focus{
 	display: inline-block;
 	height: 100%;
 }
-.jp-controls a:hover{
+.player__controls a:hover{
 	color: #fff;;
+	cursor: pointer;
 }
 .jp-previous,
 .jp-play,
@@ -229,8 +217,7 @@ a:focus{
 .jp-pause{
 	font-size: 28px;
 }
-.jp-pause,
-{
+.jp-pause{
 	display: none;
 }
 .jp-state-playing .jp-pause{
@@ -245,20 +232,9 @@ a:focus{
 	top: 0;
 	right: 25px;
 	text-align: center;
-	line-height: 60px;
+	line-height: 53px;
 	color: #c9d0d7;
 }
-/*
-.jp-previous,
-.fa-forward{
-	color: #e6eaed;
-	font-size: 24px;
-}
-.fa-play{
-	color: #e6eaed;
-	font-size: 28px;
-}
-*/
 .jp-progress{
 	vertical-align: top;
 	position: relative;
@@ -267,4 +243,33 @@ a:focus{
 }
 .jp-seek-bar{
 	background-color: #4d5d6e;
+}
+.jp-current-time,
+.jp-duration,
+.jp-mute,
+.jp-audio,
+.jp-unmute,
+.jp-volume-bar-value{
+	color: #c9d0d7;
+	line-height: 53px;
+}
+.jp-volume-controls{
+	width: 40px;
+}
+.jp-volume{
+	width: 60px !important;
+	padding-right: 10px !important;
+}
+.jp-volume-bar{
+	background-color: #4d5d6e;
+	width: 60px;
+	margin-bottom: 2px;
+}
+.jp-volume-bar-value{
+	height: 6px;
+	background-color: #778490;
+}
+.jp-volume-bar{
+	display: inline-block;
+	line-height: 53px;
 }
