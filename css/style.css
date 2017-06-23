@@ -1,0 +1,270 @@
+html, body, .music-app{
+  height: 100%;
+  width: 100%;
+}
+body{
+  margin-top: 50px;
+  color: #545a5f;
+}
+a{
+  color: #545a5f;
+}
+a:hover,
+a:focus{
+  color: #303437;
+  text-decoration: none;
+}
+.white-bg{
+  background:#ffffff !important;
+}
+.top-panel__logo{
+  background-color: #4cb6cb;
+  width: 70px;
+}
+.top-panel__logo .navbar-brand{
+  width: 70px;
+  text-align: center;
+}
+.glyphicon-headphones{
+  color: #fff;
+}
+.glyphicon-heart{
+  color: #f05050;
+}
+.glyphicon-tasks{
+  color: #1ab667;
+}
+.glyphicon-music{
+  color: #4cb6cb;
+}
+.no-border {
+  border: 0;
+  box-shadow: none;
+}
+.form-control,
+.form-control:focus {
+  box-shadow: none;
+}
+.badge{
+  background-color: #f05050;
+  position: relative;
+  top: -10px;
+  padding: 2px 5px;
+  margin-left: -10px;
+}
+.thumb{
+  width: 40px;
+  display: inline-block;
+  margin: -10px 15px 0px;
+}
+.thumb img{
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.user__avatar img{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  width: 100%;
+}
+.player__nav{
+  background-color: #181f24;
+  width: 70px;
+  height: 100vh;
+  position: fixed;
+}
+.player-nav__item{
+  text-align: center;
+  overflow: hidden;
+}
+.player-nav__link{
+  font-size: 20px;
+}
+.nav>li>.player-nav__link:hover,
+.nav>li>.player-nav__link:focus{
+  background-color: #2c3942;
+  opacity: 1;
+}
+.player-nav__text{
+  display: table-cell;
+  vertical-align: middle;
+  width: 70px;
+  opacity: 0;
+  font-size: 11px;
+  color: #fff;
+  transition: opacity ease-in-out 0.3s;
+}
+.nav>li>.player-nav__link:hover .player-nav__text{
+  opacity: 1;
+}
+.glyphicon-tasks{
+  width: auto;
+  float: none;
+  display: block;
+  margin: 0;
+  transition: margin-top 0.2s;
+  padding: 7px 0;
+}
+.player__content{
+  margin-left: 70px;
+  background-color: #f2f4f8;
+  min-height: 100vh;
+	position: relative;
+}
+.player__title{
+  padding-top: 20px;
+  margin-top: 0;
+}
+.pos-rlt{
+  position: relative;
+}
+.player__item:hover .item--overlay{
+  display: block;
+}
+.player-item__cover img{
+  max-width: 100%;
+}
+.item--overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.75);
+  display: none;
+}
+.item--overlay a:hover{
+  color: #fff;
+}
+.item__top,
+.item__bottom{
+  padding: 15px;
+}
+.item__play{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.item__play a{
+  font-size: 40px;
+}
+.item__play a.active .glyphicon-pause{
+  display: block;
+}
+.item__play a.active .glyphicon-play-circle{
+  display: none;
+}
+.glyphicon-pause{
+  display: none;
+}
+.item__bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.text-ellipsis{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item__descr{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.player__controls--bg{
+	background-color: #5a6a7a;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 70px;
+	min-height: 50px;
+	height: 1px;
+	padding: 0 15px;	
+}
+.player__controls{
+	height: 100%;
+}
+/*
+.player__controls{
+	  padding: 0 15px;
+		margin-left: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.9));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.9));
+    background-repeat: no-repeat;
+	  background: #008fd5;
+}
+*/
+.jp-controls{
+	height: 70px;
+	text-align: center;
+}
+.jp-controls a {
+	cursor: pointer;
+	display: inline-block;
+	height: 100%;
+}
+.jp-controls a:hover{
+	color: #fff;;
+}
+.jp-previous,
+.jp-play,
+.jp-next,
+.jp-pause{
+	text-align: center;
+	color: #e6eaed;
+	font-size: 24px;
+}
+.jp-play,
+.jp-pause{
+	font-size: 28px;
+}
+.jp-pause,
+{
+	display: none;
+}
+.jp-state-playing .jp-pause{
+	display: block;
+}
+.jp-seek-bar{
+	position: relative;
+}
+.jp-title{
+	position: absolute;
+	left: 25px;
+	top: 0;
+	right: 25px;
+	text-align: center;
+	line-height: 60px;
+	color: #c9d0d7;
+}
+/*
+.jp-previous,
+.fa-forward{
+	color: #e6eaed;
+	font-size: 24px;
+}
+.fa-play{
+	color: #e6eaed;
+	font-size: 28px;
+}
+*/
+.jp-progress{
+	vertical-align: top;
+	position: relative;
+	padding: 0px 15px;
+	height: 60px;
+}
+.jp-seek-bar{
+	background-color: #4d5d6e;
+}

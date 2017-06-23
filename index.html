@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	<title>app</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link type="text/css" href="css/jplayer.blue.monday.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="music-app">
+		<header class="top-panel white-bg navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="top-panel__logo navbar-header">
+						<a class="navbar-brand" href="#">
+							<i class="glyphicon glyphicon-headphones"></i>
+						</a>
+					</div>
+					<form class="top-panel__search navbar-form navbar-left"> 
+						<div class="form-group"> 
+							<div class="input-group"> 
+								<span class="input-group-btn"> 
+									<button type="submit" class="btn white-bg">
+										<i class="fa fa-search"></i>
+									</button>
+								</span> 
+								<input type="text" class="form-control no-border rounded" placeholder="Search songs, albums..."> 
+							</div>
+						</div> 
+					</form>
+					<div class="top-panel__info navbar-right"> 
+						<ul class="nav navbar-nav">
+							<li class="top-panel__notifications"> 
+								<a href="#"> 
+									<i class="fa fa-bell-o"></i>
+									<span class="badge">3</span> 
+								</a> 
+							</li>
+							<li class="top-panel__user"> 
+								<a href="#"> 
+									<span class="thumb user__avatar pull-right"> 
+										<img src="img/panda.jpg" alt="..."> 
+									</span> panda
+									<b class="caret"></b> 
+								</a> 
+<!--
+								<ul class="dropdown-menu animated fadeInRight"> 
+							<li> <span class="arrow top"></span> <a href="#">Settings</a> </li> <li> <a href="profile.html">Profile</a> </li> <li> <a href="#"> <span class="badge bg-danger pull-right">3</span> Notifications </a> </li> <li> <a href="docs.html">Help</a> </li> <li class="divider"></li> <li> <a href="modal.lockme.html" data-toggle="ajaxModal">Logout</a> </li> </ul> </li>
+-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+	
+		<section class="player__inner"> 
+		<div class="container-fluid">
+				<div class="row">
+		<!-- .aside --> 
+		<aside class="player__nav"> 
+			<section class="vbox"> 
+				<section class="w-f-md scrollable"> 
+					<nav>
+						<ul class="nav">
+						<li class="player-nav__item">
+								 <a href="index.html" class="player-nav__link"> 
+								   <i class="glyphicon glyphicon-heart"></i> 
+								   <span class="player-nav__text">Favourite</span> 
+								 </a> 
+							</li>
+							<li class="player-nav__item">
+								 <a href="index.html" class="player-nav__link"> 
+								   <i class="glyphicon glyphicon-tasks"></i> 
+								   <span class="player-nav__text">Albums</span> 
+								 </a> 
+							</li>
+							<li class="player-nav__item">
+								 <a href="index.html" class="player-nav__link"> 
+								   <i class="glyphicon glyphicon-music text-primary"></i> 
+								   <span class="player-nav__text">Songs</span> 
+								 </a> 
+							</li>
+						</ul>
+					</nav>
+				</section>
+				
+			</section>
+
+			</aside>
+          </div>
+          </div>
+			
+			<section class="player__content">
+				<h2 class="player__title container-fluid">Albums</h2> 
+					<div class="container-fluid">
+						<div class="row row-sm"> 
+							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"> 
+								<div class="player__item">
+									<div class="pos-rlt">
+										<div class="item--overlay"> 
+											<div class="item__top"> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o text-muted"></i> 
+											</div> 
+											<div class="item__play text-center  "> 
+												<a href="#"><i class="glyphicon glyphicon-play-circle"></i></a> 
+											</div> 
+											<div class="item__bottom"> 
+												<a href="#" class="pull-right">
+													<i class="fa fa-heart-o"></i>
+												</a> 
+												<a href="#">
+													<i class="fa fa-plus-circle"></i>
+												</a> 
+											</div> 
+										</div> 
+											<a href="#" class="player-item__cover">
+												<img src="http://flatfull.com/themes/musik/images/p1.jpg" alt="" class="r r-2x img-full">
+											</a> 
+										</div>
+									<div class="item__descr"> 
+										<a href="#" class="text-ellipsis">Tempered Song</a> 
+										<a href="#" class="text-ellipsis text-xs text-muted">Miaow</a> 
+									</div> 
+								</div> 
+							</div>
+
+							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"> 
+								<div class="player__item">
+									<div class="pos-rlt">
+										<div class="item--overlay"> 
+											<div class="item__top"> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o text-muted"></i> 
+											</div> 
+											<div class="item__play text-center"> 
+												<a href="#">
+													<i class="glyphicon glyphicon-play-circle"></i>
+													<i class="glyphicon glyphicon-pause"></i>
+												</a> 
+											</div> 
+											<div class="item__bottom"> 
+												<a href="#" class="pull-right">
+													<i class="fa fa-heart-o"></i>
+												</a> 
+												<a href="#">
+													<i class="fa fa-plus-circle"></i>
+												</a> 
+											</div> 
+										</div> 
+											<a href="#" class="player-item__cover">
+												<img src="http://flatfull.com/themes/musik/images/p2.jpg" alt="" class="r r-2x img-full">
+											</a> 
+										</div>
+									<div class="item__descr"> 
+										<a href="#" class="text-ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> 
+										<a href="#" class="text-ellipsis text-xs text-muted">Miaow</a> 
+									</div> 
+								</div> 
+							</div>
+							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"> 
+								<div class="player__item">
+									<div class="pos-rlt">
+										<div class="item--overlay"> 
+											<div class="item__top"> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o text-muted"></i> 
+											</div> 
+											<div class="item__play text-center"> 
+												<a href="#"><i class="glyphicon glyphicon-play-circle"></i></a> 
+											</div> 
+											<div class="item__bottom"> 
+												<a href="#" class="pull-right">
+													<i class="fa fa-heart-o"></i>
+												</a> 
+												<a href="#">
+													<i class="fa fa-plus-circle"></i>
+												</a> 
+											</div> 
+										</div> 
+											<a href="#" class="player-item__cover">
+												<img src="http://flatfull.com/themes/musik/images/p3.jpg" alt="" class="r r-2x img-full">
+											</a> 
+										</div>
+									<div class="item__descr"> 
+										<a href="#" class="text-ellipsis">Tempered Song</a> 
+										<a href="#" class="text-ellipsis text-xs text-muted">Miaow</a> 
+									</div> 
+								</div> 
+							</div>
+
+							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"> 
+								<div class="player__item">
+									<div class="pos-rlt">
+										<div class="item--overlay"> 
+											<div class="item__top"> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o text-muted"></i> 
+											</div> 
+											<div class="item__play text-center  "> 
+												<a href="#"><i class="glyphicon glyphicon-play-circle"></i></a> 
+											</div> 
+											<div class="item__bottom"> 
+												<a href="#" class="pull-right">
+													<i class="fa fa-heart-o"></i>
+												</a> 
+												<a href="#">
+													<i class="fa fa-plus-circle"></i>
+												</a> 
+											</div> 
+										</div> 
+											<a href="#" class="player-item__cover">
+												<img src="http://flatfull.com/themes/musik/images/p4.jpg" alt="" class="r r-2x img-full">
+											</a> 
+										</div>
+									<div class="item__descr"> 
+										<a href="#" class="text-ellipsis">Tempered Song</a> 
+										<a href="#" class="text-ellipsis text-xs text-muted">Miaow</a> 
+									</div> 
+								</div> 
+							</div>
+
+							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"> 
+								<div class="player__item">
+									<div class="pos-rlt">
+										<div class="item--overlay"> 
+											<div class="item__top"> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o text-muted"></i> 
+											</div> 
+											<div class="item__play text-center"> 
+												<a href="#"><i class="glyphicon glyphicon-play-circle"></i></a> 
+											</div> 
+											<div class="item__bottom"> 
+												<a href="#" class="pull-right">
+													<i class="fa fa-heart-o"></i>
+												</a> 
+												<a href="#">
+													<i class="fa fa-plus-circle"></i>
+												</a> 
+											</div> 
+										</div> 
+											<a href="#" class="player-item__cover">
+												<img src="http://flatfull.com/themes/musik/images/p5.jpg" alt="" class="r r-2x img-full">
+											</a> 
+										</div>
+									<div class="item__descr"> 
+										<a href="#" class="text-ellipsis">Tempered Song</a> 
+										<a href="#" class="text-ellipsis text-xs text-muted">Miaow</a> 
+									</div> 
+								</div> 
+							</div>
+
+							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"> 
+								<div class="player__item">
+									<div class="pos-rlt">
+										<div class="item--overlay"> 
+											<div class="item__top"> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o text-muted"></i> 
+											</div> 
+											<div class="item__play text-center"> 
+												<a href="#">
+													<i class="glyphicon glyphicon-play-circle"></i>
+													<i class="glyphicon glyphicon-pause"></i>
+												</a> 
+											</div> 
+											<div class="item__bottom"> 
+												<a href="#" class="pull-right">
+													<i class="fa fa-heart-o"></i>
+												</a> 
+												<a href="#">
+													<i class="fa fa-plus-circle"></i>
+												</a> 
+											</div> 
+										</div> 
+											<a href="#" class="player-item__cover">
+												<img src="http://flatfull.com/themes/musik/images/p6.jpg" alt="" class="r r-2x img-full">
+											</a> 
+										</div>
+									<div class="item__descr"> 
+										<a href="#" class="text-ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> 
+										<a href="#" class="text-ellipsis text-xs text-muted">Miaow</a> 
+									</div> 
+								</div> 
+							</div>
+
+
+							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"> 
+								<div class="player__item">
+									<div class="pos-rlt">
+										<div class="item--overlay"> 
+											<div class="item__top"> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i> 
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-o text-muted"></i> 
+											</div> 
+											<div class="item__play text-center"> 
+												<a href="#">
+													<i class="glyphicon glyphicon-play-circle"></i>
+													<i class="glyphicon glyphicon-pause"></i>
+												</a> 
+											</div> 
+											<div class="item__bottom"> 
+												<a href="#" class="pull-right">
+													<i class="fa fa-heart-o"></i>
+												</a> 
+												<a href="#">
+													<i class="fa fa-plus-circle"></i>
+												</a> 
+											</div> 
+										</div> 
+											<a href="#" class="player-item__cover">
+												<img src="http://flatfull.com/themes/musik/images/p7.jpg" alt="" class="r r-2x img-full">
+											</a> 
+										</div>
+									<div class="item__descr"> 
+										<a href="#" class="text-ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> 
+										<a href="#" class="text-ellipsis text-xs text-muted">Miaow</a> 
+									</div> 
+								</div> 
+							</div>
+
+              </div>
+               </div>
+               
+          <footer class="player__controls--bg">
+						<section class="player__controls">
+							<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+								<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+									<div class="jp-type-single">
+										<div class="jp-gui jp-interface">
+											<div class="jp-controls col-xs-2">
+													<a class="jp-previous"><i class="glyphicon glyphicon-backward"></i></a>
+													<a class="jp-play"><i class="fa fa-play"></i></a>
+													<a class="jp-state-playing jp-pause"><i class="fa fa-pause"></i></a>
+													<a class="jp-next"><i class="fa fa-forward"></i></a>
+												</div>
+												<div class="jp-progress col-xs-6">
+													<div class="jp-seek-bar">
+														<div class="jp-play-bar">
+														<div class="jp-title">Bubble</div>
+														<div class="jp-ball"></div>
+														</div>
+													</div>
+											</div>
+											<div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00</div>
+												<div class="jp-volume-controls">
+													<div class="jp-volume-bar">
+														<div class="jp-volume-bar-value"></div>
+													</div>
+												</div>
+												<div class="jp-time-holder">
+													<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+													<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+													<div class="jp-toggles">
+															<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+													</div>
+												</div>
+											<div class="jp-no-solution">	<span>Update Required</span>
+							To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.</div>
+									</div>
+									</div>
+								</div>
+
+					 </section>
+         </footer>
+         
+			</section>
+	
+			
+			
+		</section>
+	</section>
+	
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>	
+  <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+    $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                title: "Bubble",
+                mp3: "http://jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"
+            });
+        },
+        timeupdate: function(event) {
+			$("#jp_container_1 .jp-ball").css("left",event.jPlayer.status.currentPercentAbsolute + "%");
+		},
+        swfPath: "https://rawgit.com/happyworm/jPlayer/tree/master/dist/jplayer",
+        supplied: "mp3",
+        wmode: "window",
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true,
+        remainingDuration: true,
+        toggleDuration: true
+    });
+
+
+    /* Modern Seeking */
+
+    var timeDrag = false; /* Drag status */
+    $('.jp-play-bar').mousedown(function (e) {
+        timeDrag = true;
+        updatebar(e.pageX);
+    });
+    $(document).mouseup(function (e) {
+        if (timeDrag) {
+            timeDrag = false;
+            updatebar(e.pageX);
+        }
+    });
+    $(document).mousemove(function (e) {
+        if (timeDrag) {
+            updatebar(e.pageX);
+        }
+    });
+
+    //update Progress Bar control
+    var updatebar = function (x) {
+
+        var progress = $('.jp-progress');
+        var maxduration = $("#jquery_jplayer_1").jPlayer.duration; //audio duration
+        console.log(maxduration);
+        var position = x - progress.offset().left; //Click pos
+        var percentage = 100 * position / progress.width();
+
+        //Check within range
+        if (percentage > 100) {
+            percentage = 100;
+        }
+        if (percentage < 0) {
+            percentage = 0;
+        }
+
+        $("#jquery_jplayer_1").jPlayer("playHead", percentage);
+
+        //Update progress bar and video currenttime
+        $('.jp-ball').css('left', percentage+'%');
+        $('.jp-play-bar').css('width', percentage + '%');
+        $("#jquery_jplayer_1").jPlayer.currentTime = maxduration * percentage / 100;
+    };
+
+});
+                        
+  </script>
+</body>
+</html>
+	
